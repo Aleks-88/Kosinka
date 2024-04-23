@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class WebGLLoader : MonoBehaviour {
 
 	private void Awake() {
-#if UNITY_WEBGL
+/*#if UNITY_WEBGL
 		//Resolution resolution = Screen.currentResolution;
 		Vector2 fullhd = new Vector2(1080, 1920);
 		float ratio = fullhd.y / fullhd.x;
@@ -15,7 +15,7 @@ public class WebGLLoader : MonoBehaviour {
 		CommandBuffer mybuffer = new CommandBuffer();
 		mybuffer.ClearRenderTarget(true, true, Color.white, 1.0f);
 		Graphics.ExecuteCommandBuffer(mybuffer);
-#endif
+#endif*/
 		SceneManager.LoadSceneAsync(1);
 	}
 }
